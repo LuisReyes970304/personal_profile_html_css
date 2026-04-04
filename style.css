@@ -3,7 +3,7 @@ body {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: rgb(230,230,230);
+    background-color: rgb(220,245,220);
     width: 100vw;
     height: 100vh;
 }
@@ -13,7 +13,7 @@ header {
     width: 100%;
     background-color: rgb(10,200,100);
     justify-content: space-between;
-    height:6%;
+    height:55px;
     box-shadow: 1px 1px 15px 1px rgb(0,0,0.1);
 }
 
@@ -26,22 +26,50 @@ h1 {
 .menu {
     display: inline-flex;
     flex-direction: column;
-    align-items: center;
+    align-items: end;
     margin: 10px;
+    gap: 40px;
 }
 
 .nav_btn {
     display: flex;
+    align-items: center;
+    justify-content: center;
     position: relative;
-    left: 60px;
+    width:40px;
+    min-height: 40px;
+    font-size: xx-large;
+    background-color: rgb(10,100,190);
+    border: none;
+    border-radius: 5px;
 }
 
-nav {
-    display: flex; 
+.nav_btn:hover {
+    background-color: rgb(10,150,200);
+}
+
+.nav_btn:active {
+    border: 2px solid rgb(10,200,100);
+    background-color: rgb(10,100,250);
+}
+
+/* This is the text burger into the nav button*/
+.burger {
+    display: flex;
+    margin-top: 70%;
+    color: white;
+}
+
+ nav {
+    display: none;
     flex-direction: column;
     background-color: rgb(10,200,100);
     margin: 10px;
     padding: 10px;
     box-shadow: 1px 1px 15px 1px rgb(0,0,0.1);
     border-radius: 5px;
+}
+
+.show {
+    display: flex
 }
