@@ -6,7 +6,14 @@ body {
     background-color: rgb(220,245,220);
     width: 100vw;
     height: 100vh;
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "aside  main";
+    grid-template-rows: 55px 1fr;
 }
+
+/********************************** This is the header layout **************************************/
 
 header {
     display: inline-flex;
@@ -15,6 +22,7 @@ header {
     justify-content: space-between;
     height:55px;
     box-shadow: 1px 1px 15px 1px rgb(0,0,0.1);
+    grid-area: header;
 }
 
 h1 {
@@ -53,6 +61,16 @@ h1 {
     background-color: rgb(10,100,250);
 }
 
+a {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: x-large;
+    color: white;
+}
+
+a:hover {
+    color: rgb(10,100,190);
+}
+
 /* This is the text burger into the nav button*/
 .burger {
     display: flex;
@@ -60,7 +78,7 @@ h1 {
     color: white;
 }
 
- nav {
+.options {
     display: none;
     flex-direction: column;
     background-color: rgb(10,200,100);
@@ -68,8 +86,43 @@ h1 {
     padding: 10px;
     box-shadow: 1px 1px 15px 1px rgb(0,0,0.1);
     border-radius: 5px;
+    z-index: 1111;
 }
 
 .show {
     display: flex
+}
+
+
+/****************************** This is the main distribution and Layout*****************************/
+
+main {
+    display: flex;
+    height: 100%;
+    width: 70vw;
+    grid-area: main;
+}
+
+/*This is myself photo*/
+
+aside {
+    display: flex;
+    height: 100%;
+    width: 30vw;
+    grid-area: aside;
+}
+
+.perfil_content {
+    display: flex;
+    height: 100%;
+    background-color: black;
+}
+
+.myself {
+    display: flex;
+    width:100%;
+    height: fit-content;
+    margin: 20px;
+    border-radius: 15px;
+    box-shadow: 1px 1px 15px 1px rgb(0,0,0.1);
 }
