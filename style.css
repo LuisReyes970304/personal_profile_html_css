@@ -3,6 +3,7 @@ body {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    gap: 30px;
     background-color: rgb(220,245,220);
     width: 100vw;
     height: 100vh;
@@ -50,6 +51,7 @@ h1 {
     background-color: rgb(10,100,190);
     border: none;
     border-radius: 5px;
+    color: white;
 }
 
 .nav_btn:hover {
@@ -72,11 +74,6 @@ a:hover {
 }
 
 /* This is the text burger into the nav button*/
-.burger {
-    display: flex;
-    margin-top: 70%;
-    color: white;
-}
 
 .options {
     display: none;
@@ -99,7 +96,7 @@ a:hover {
 main {
     display: flex;
     height: 100%;
-    width: 70vw;
+    width: 60vw;
     grid-area: main;
 }
 
